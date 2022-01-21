@@ -1,3 +1,4 @@
+import Game from './components/game'
 import './App.css'
 
 const choicesList = [
@@ -18,6 +19,6 @@ const choicesList = [
   },
 ]
 
-const App = () => <div>Hello World</div>
+const App = () => <Game list={choicesList} />
 
 export default App

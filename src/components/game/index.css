@@ -1,0 +1,85 @@
+.appContainer {
+  height: 100vh;
+  background-color: #223a5f;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.scoreContainer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+  border: #ffffff solid;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.listId {
+  color: #ffffff;
+  list-style-type: none;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.scoreCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 10px;
+  height: 20vh;
+  width: 20vh;
+}
+
+.scoreItem {
+  color: #223a5f;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.buttonCard {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.game-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px;
+}
+
+.upper {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.lower {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image1 {
+  height: 60px;
+  width: 60px;
+  cursor: pointer;
+}
+
+.resultViewCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageCard {
+  display: flex;
+  justify-content: space-around;
+}
