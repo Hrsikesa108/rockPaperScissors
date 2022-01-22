@@ -1,5 +1,5 @@
 .appContainer {
-  height: 100vh;
+  height: 100%;
   background-color: #223a5f;
   display: flex;
   flex-direction: column;
@@ -8,8 +8,15 @@
 
 .scoreContainer {
   display: flex;
-  justify-content: space-around;
-  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.score-holder {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
   border: #ffffff solid;
   margin-left: 60px;
   margin-right: 60px;
@@ -27,6 +34,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 40px;
+  margin-bottom: 10px;
   border-radius: 5px;
   background-color: #ffffff;
   margin-top: 10px;
@@ -50,7 +59,8 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 20px;
+  margin-top: 80px;
+  height: 100px;
 }
 
 .upper {
@@ -67,9 +77,8 @@
 }
 
 .image1 {
-  height: 60px;
-  width: 60px;
-  cursor: pointer;
+  height: 80px;
+  width: 80px;
 }
 
 .resultViewCard {
@@ -81,5 +90,52 @@
 
 .imageCard {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+}
+
+.resultImage {
+  height: 200px;
+  width: 200px;
+}
+
+.subImage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultViewText {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: large;
+  font-weight: bold;
+}
+
+.playAgainBtn {
+  font-family: 'Roboto';
+  font-size: 16px;
+  border-radius: 15px;
+  font-style: italic;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main-heading {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: large;
+  font-weight: bold;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+
+.buttonClick {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
 }

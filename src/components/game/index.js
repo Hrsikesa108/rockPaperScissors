@@ -148,70 +148,87 @@ export default class Game extends Component {
     return (
       <div className="appContainer">
         <div className="scoreContainer">
-          <div>
-            {/* <ul>
-              {choicesList.map(e => (
-                <li key={e.id} className="listId">
-                  {e.id}
-                </li>
-              ))}
-            </ul> */}
-          </div>
-          <h1>Rock Paper Scissors</h1>
-          <div className="scoreCard">
-            <p className="scoreItem">Score</p>
-            <p className="scoreItem">{count}</p>
+          <div className="score-holder">
+            <div>
+              <h1 className="main-heading">
+                Rock <br />
+                Paper <br /> Scissors
+              </h1>
+            </div>
+            <div className="scoreCard">
+              <p className="scoreItem">Score</p>
+              <p className="scoreItem">{count}</p>
+            </div>
           </div>
         </div>
         {view ? (
           <div className="resultViewCard">
             <div className="imageCard">
-              <div>
-                <p>You</p>
-                <img className="image1" src={yourChoice} alt="your choice" />
-              </div>
-              <div>
-                <p>Opponent</p>
+              <div className="subImage">
+                <p className="resultViewText">YOU</p>
                 <img
-                  className="image1"
+                  src={yourChoice}
+                  alt="your choice"
+                  className="resultImage"
+                />
+              </div>
+              <div className="subImage">
+                <p className="resultViewText">OPPONENT</p>
+                <img
                   src={randomChoice}
                   alt="opponent choice"
+                  className="resultImage"
                 />
               </div>
             </div>
-            <p>{resultText}</p>
-            <button type="button" onClick={this.resetFunction}>
+            <p className="resultViewText">{resultText}</p>
+            <button
+              type="button"
+              className="playAgainBtn"
+              onClick={this.resetFunction}
+            >
               PLAY AGAIN
             </button>
           </div>
         ) : (
           <div className="game-items">
             <div className="upper">
-              <button type="button" data-testid="rockButton">
+              <button
+                type="button"
+                data-testid="rockButton"
+                className="buttonClick"
+                onClick={() => this.scoreFunciton('ROCK')}
+              >
                 <img
                   alt={choicesList[0].id}
                   src={choicesList[0].imageUrl}
                   className="image1"
-                  onClick={() => this.scoreFunciton('ROCK')}
                 />
               </button>
-              <button type="button" data-testid="scissorsButton">
+              <button
+                type="button"
+                data-testid="scissorsButton"
+                className="buttonClick"
+                onClick={() => this.scoreFunciton('SCISSORS')}
+              >
                 <img
                   alt={choicesList[1].id}
                   src={choicesList[1].imageUrl}
                   className="image1"
-                  onClick={() => this.scoreFunciton('SCISSORS')}
                 />
               </button>
             </div>
             <div className="lower">
-              <button type="button" data-testid="paperButton">
+              <button
+                type="button"
+                data-testid="paperButton"
+                className="buttonClick"
+                onClick={() => this.scoreFunciton('PAPER')}
+              >
                 <img
                   alt={choicesList[2].id}
-                  //   src="https://assets.ccbp.in/frontend/react-js/rock-paper-scissor/paper-image.png"
                   src={choicesList[2].imageUrl}
                   className="image1"
-                  onClick={() => this.scoreFunciton('PAPER')}
                 />
               </button>
             </div>
